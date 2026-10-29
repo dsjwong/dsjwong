@@ -11,6 +11,17 @@ and the failure modes nobody wrote down.
 
 ### Selected work
 
+**[HKIA Flight Delay Predictor](https://github.com/dsjwong/hkia-delay-predictor)** · [live app](https://darrenwongsj.dev/hkia-delay-predictor/)
+Predicts departure delays at Hong Kong International Airport from live flight, weather and
+ADS-B data, on a scheduled GitHub Actions pipeline with a static React + deck.gl front end.
+It grades itself in public: every published probability is scored against the real departure,
+with bootstrap confidence intervals — live AUC 0.669 vs 0.620 for an airline × hour baseline.
+
+**[LLM Trading-Agent Backtester](https://github.com/dsjwong/stockagent-backtester)**
+Replays an LLM trading agent on 15 real US large-caps (2019–2026) against classical strategies,
+with transaction costs and no lookahead. Anonymising tickers and dates shows how much of the
+agent's apparent edge is the model remembering the market — [the 2-minute writeup](https://github.com/dsjwong/stockagent-backtester/blob/main/docs/leakage-writeup.md).
+
 **[Crop Pest Detection Benchmark](https://github.com/dsjwong/cv-crop-pest-object-detection-benchmarking)**
 Six architectures — three detectors, three classifiers — trained head-to-head on a
 twelve-class pest dataset. ViT reached 93.4% accuracy, YOLOv11 reached 0.825 mAP@0.5.
